@@ -14,20 +14,35 @@
         <button class="button buttonWAF" onclick="startWAF()">We Are Friends</button>
         <button class="button buttonBNW" onclick="startBNW()">Beautiful New World</button>
     </div>
+    <div class="modal-con">
+        <button class="modal-btn" onclick="openModal()">?</button>
+        <div id="modal" onclick="closeModal()">
+            <h1>Hellow</h1>
+            <p>yippee</p>
+        </div>
+    </div>
     <a href="index.html">testing:back to index</a>
 </body>
 
 <script>
+    function openModal() {
+        document.getElementById("modal").style.display = "flex";
+    };
+
+    function closeModal() {
+        document.getElementById("modal").style.display = "none";
+    };
+
     function startCOG() {
-        document.location.href = "http://127.0.0.1:5500/testing/cog-exp/index.html";
+        document.location.href = "https://nyp-ixd-fyp3.github.io/experience/testing/cog-exp/index.html";
     };
 
     function startWAF() {
-        document.location.href = "http://127.0.0.1:5500/testing/waf-exp/index.html";
+        document.location.href = "https://nyp-ixd-fyp3.github.io/experience/testing/waf-exp/index.html";
     };
 
     function startBNW() {
-        document.location.href = "http://127.0.0.1:5500/testing/bnw-exp/index.html";
+        document.location.href = "https://nyp-ixd-fyp3.github.io/experience/testing/bnw-exp/index.html";
     };
 </script>
 
