@@ -17,8 +17,23 @@ fieldset, legend {
   box-sizing: border-box;
 }
 
+.button-con{
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(red,yellow, yellow,red);
+  height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .button{
-    background-color: black;
-    color: white;
-    border: none;
+  background-color: white;
+  border: none;
+  height: 10vh;
+  width: 70vw;
+  font-size: 1.2em;
+}
+
+a{
+  text-decoration: none;
 }
