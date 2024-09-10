@@ -1,0 +1,24 @@
+/** Basic reset **/
+
+/* Resetting margins, paddings, and borders */
+body,
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+dl, dd, ol, ul,
+figure,
+fieldset, legend {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Global box-sizing rule */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.button{
+    background-color: black;
+    color: white;
+    border: none;
+}
