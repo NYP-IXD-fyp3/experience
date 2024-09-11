@@ -31,9 +31,25 @@ scene.add(box)
 
 update()
 
+window.addEventListener('resize', onResize)
+
 function update() {
+	box.rotation.z += 0.05
+	box.rotation.y += 0.01
+
 	renderer.render( scene, camera );
 	window.requestAnimationFrame(update)
+}
+
+function onResize() {
+	width = threejsCanvas.offsetWidth
+	height = threejsCanvas.offsetHeight
+
+	renderer.setSize(width, height)
+	renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+
+	camera.aspect = width / height
+	camera.updateProjectionMatrix()
 }
 
 const button = ARButton.createButton(renderer)
