@@ -20,7 +20,7 @@ fieldset, legend {
 /** Homepage styles **/
 body{
   height: 100vh;
-  background-image: linear-gradient(red,yellow, yellow,red);
+  background-image: linear-gradient(green,yellow,blue);
 }
 
 .button-con{
@@ -32,15 +32,42 @@ body{
 }
 
 .button{
-  background-color: white;
-  border: none;
+  border: 2px solid black;
   height: 10vh;
   width: 70vw;
   font-size: 1.2em;
 }
 
+.buttonCOG{
+  background-color: yellow;
+}
+
+.buttonWAF{
+  background-color: blue;
+  color: white;
+}
+
+.buttonBNW{
+  background-color: green;
+  color: white;
+}
+
 .modal-con{
   height: 5%;
+  position: relative;
+}
+
+.modal-btn{
+  position: absolute;
+  height: 4vh;
+  width: 4vh;
+  right: 5vw;
+  top: -3vh;
+
+  border: none;
+  background: none;
+  color: white;
+  font-size: 1.4em;
 }
 
 #modal{
