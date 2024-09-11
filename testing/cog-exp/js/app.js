@@ -1,4 +1,7 @@
-//canvas setup
+//importing three.js
+import * as THREE from 'three'
+
+//canvas setup 
 const threejsCanvas = document.querySelector('#threejs-canvas')
 let width = threejsCanvas.offsetWidth
 let height = threejsCanvas.offsetHeight
