@@ -1,76 +1,87 @@
 /** Basic reset **/
 
 /* Resetting margins, paddings, and borders */
-body,
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-dl, dd, ol, ul,
-figure,
-fieldset, legend {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-
-/* Global box-sizing rule */
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-/** Homepage styles **/
-body{
+body {
   height: 100vh;
-  background-image: linear-gradient(green,yellow,blue);
+  background-image: linear-gradient(green, yellow, blue);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.button-con{
+.button-con {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   height: 95%;
+  gap: 2rem;
 }
 
-.button{
-  border: 2px solid black;
-  height: 10vh;
-  width: 70vw;
-  font-size: 1.2em;
+.button {
+  cursor: pointer;
+  width: 184px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.125em;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #fff;
+  border: 2px solid;
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.2);
+  transform: skew(-10deg);
+  transition: all 0.1s ease;
+  filter: drop-shadow(0 15px 20px rgba(0, 0, 0, 0.1));
 }
 
-.buttonCOG{
-  background-color: yellow;
+.button:active {
+  letter-spacing: 0px;
+  transform: skew(-10deg) translateY(8px);
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
 }
 
-.buttonWAF{
-  background-color: blue;
+/* Specific button colors */
+.buttonCOG {
+  background-color: #f4c430; /* A yellow shade */
+  border-color: #d4b020;
+}
+
+.buttonWAF {
+  background-color: #003f87; /* A deep blue */
+  border-color: #002f6d;
   color: white;
 }
 
-.buttonBNW{
-  background-color: green;
+.buttonBNW {
+  background-color: #3c8031; /* A green shade */
+  border-color: #316b27;
   color: white;
 }
 
-.modal-con{
+/* Modal button styles */
+.modal-con {
   height: 5%;
   position: relative;
 }
 
-.modal-btn{
+.modal-btn {
   position: absolute;
   height: 4vh;
   width: 4vh;
   right: 5vw;
   top: -3vh;
-
   border: none;
   background: none;
   color: white;
   font-size: 1.4em;
+  cursor: pointer;
 }
 
-#modal{
+#modal {
   position: fixed;
   display: none;
   justify-content: center;
@@ -80,15 +91,15 @@ body{
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   z-index: 2;
-  cursor: pointer;  
+  cursor: pointer;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
 
-a{
+a {
   text-decoration: none;
 }
