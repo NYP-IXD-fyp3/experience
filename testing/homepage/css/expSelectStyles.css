@@ -21,8 +21,8 @@ body {
 
 .button {
   cursor: pointer;
-  width: 184px;
-  height: 48px;
+  width: 200px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
