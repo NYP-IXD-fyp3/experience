@@ -3,7 +3,7 @@
 /* Resetting margins, paddings, and borders */
 body {
   height: 100vh;
-  background: linear-gradient(135deg, #1e3c72, #2a5298, #1f8748, #8fba54);
+  background: linear-gradient(35deg, #1e3c72, #2a5298, #f3a921, #8fba54, #1f8748);
   margin: 0;
   display: flex;
   justify-content: center;
@@ -46,7 +46,7 @@ body {
 
 /* Specific button colors */
 .buttonCOG {
-  background-color: #f4c430; /* A yellow shade */
+  background-color: #f3a921; /* A yellow shade */
   border-color: #d4b020;
 }
 
@@ -61,29 +61,6 @@ body {
   border-color: #316b27;
   color: white;
 }
-
-.back-btn {
-  position: fixed;
-  top: 2vh;
-  left: 2vw;
-  text-decoration: none;
-  font-size: 1.2em;
-  font-weight: bold;
-  color: white; /* Adjust color to fit your design */
-  background-color: rgba(0, 0, 0, 0.6); /* Optional background for visibility */
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  transition: background-color 0.3s ease;
-}
-
-.back-btn:hover {
-  background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
-}
-
-.back-btn:active {
-  transform: translateY(2px); /* Slight push down on click */
-}
-
 
 /* Modal button styles */
 .modal-con {
