@@ -3,7 +3,7 @@
 /* Resetting margins, paddings, and borders */
 body {
   height: 100vh;
-  background-image: linear-gradient(green, yellow, blue);
+  background: linear-gradient(135deg, #1e3c72, #2a5298, #1f8748, #8fba54);
   margin: 0;
   display: flex;
   justify-content: center;
@@ -64,21 +64,31 @@ body {
 
 /* Modal button styles */
 .modal-con {
-  height: 5%;
-  position: relative;
+  position: fixed;
+  bottom: 2vh;
+  right: 2vw;
 }
 
 .modal-btn {
-  position: absolute;
   height: 4vh;
   width: 4vh;
-  right: 5vw;
-  top: -3vh;
   border: none;
   background: none;
   color: white;
   font-size: 1.4em;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark background for visibility */
+  border-radius: 50%;
+  padding: 1.5rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s ease;
+}
+
+.modal-btn:hover {
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 #modal {
