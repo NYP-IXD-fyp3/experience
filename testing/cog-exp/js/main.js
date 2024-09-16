@@ -26,8 +26,8 @@ threejsCanvas.appendChild(renderer.domElement)
 //3d box
 const geometry = new THREE.IcosahedronGeometry(5,4)
 const material = new THREE.MeshStandardMaterial({color: 0xffffff, flatShading: true})
-const box = new THREE.Mesh(geometry, material)
-scene.add(box)
+const obj = new THREE.Mesh(geometry, material)
+scene.add(obj)
 
 const hemiLight = new THREE.HemisphereLight(0xffffff, 0x000000)
 scene.add(hemiLight)
@@ -37,8 +37,8 @@ update()
 window.addEventListener('resize', onResize)
 
 function update() {
-	box.rotation.z += 0.05
-	box.rotation.y += 0.01
+	obj.rotation.z += 0.05
+	obj.rotation.x += 0.01
 
 	renderer.render( scene, camera );
 	window.requestAnimationFrame(update)
