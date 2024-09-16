@@ -29,6 +29,9 @@ const material = new THREE.MeshStandardMaterial({color: 0xffffff, flatShading: t
 const box = new THREE.Mesh(geometry, material)
 scene.add(box)
 
+const hemiLight = new THREE.HemisphereLight(0xffffff, 0x000000)
+scene.add(hemiLight)
+
 update()
 
 window.addEventListener('resize', onResize)
