@@ -25,7 +25,7 @@ threejsCanvas.appendChild(renderer.domElement)
 
 //3d box
 const geometry = new THREE.BoxGeometry(5, 5, 5)
-const material = new THREE.MeshBasicMaterial({color: 0xffffff})
+const material = new THREE.MeshStandardMaterial({color: 0xffffff, flatShading: true})
 const box = new THREE.Mesh(geometry, material)
 scene.add(box)
 
