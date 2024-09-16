@@ -24,7 +24,7 @@ renderer.xr.enabled = true
 threejsCanvas.appendChild(renderer.domElement)
 
 //3d box
-const geometry = new THREE.BoxGeometry(5, 5, 5)
+const geometry = new THREE.IcosahedronGeometry(5,4)
 const material = new THREE.MeshStandardMaterial({color: 0xffffff, flatShading: true})
 const box = new THREE.Mesh(geometry, material)
 scene.add(box)
