@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <a-scene landing-page xrextras-loading xrextras-runtime-error xrextras-gesture-detector webxr="allowedDevices: any, optionalFeatures: hit-test">
+    <a-scene landing-page xrextras-loading xrextras-runtime-error xrextras-gesture-detector webxr="allowedDevices: any">
 
         <a-assets>
             <a-asset-item id="man-glb" src="assets/man.glb"></a-asset-item>
@@ -39,22 +39,13 @@
         <a-entity id="man" gltf-model="#man-glb" position="-1 0 0" xrextras-pinch-scale>
         </a-entity>
 
-        <a-entity 
-            id="spidermanps4" 
-            gltf-model="#spidermanps4-glb" 
-            position="3 0 2" 
-            xrextras-pinch-scale
+        <a-entity id="spidermanps4" gltf-model="#spidermanps4-glb" position="3 0 2" xrextras-pinch-scale
             xrextras-one-finger-rotate>
         </a-entity>
 
 
-        <a-plane
-            position="0 0 0" 
-            rotation="-90 0 0" 
-            width="8" 
-            height="8"
-            material="side: double; color: #FFFF00; transparent: true; opacity: 0.5" 
-            shadow>
+        <a-plane position="0 0 0" rotation="-90 0 0" width="8" height="8"
+            material="side: double; color: #FFFF00; transparent: true; opacity: 0.5" shadow>
         </a-plane>
     </a-scene>
 
